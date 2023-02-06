@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="350dp"
+       android:layout_height="wrap_content"
+       android:id="@+id/email"
+      android:layout_gravity="center"
+       android:background=""
+      android:hint="Email"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      >
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="textEmailAddress"
+         android:ems="14">
+
+      </com.google.android.material.textfield.TextInputEditText>
+   </com.google.android.material.textfield.TextInputLayout>
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="350dp"
+       android:layout_height="wrap_content"
+       android:id="@+id/password"
+       android:layout_gravity="center"
+
+       android:background=""
+       android:hint="Password"
+       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+       >
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+       android:inputType="number"
+          android:ems="14">
+
+      </com.google.android.material.textfield.TextInputEditText>
+   </com.google.android.material.textfield.TextInputLayout>
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:text="login"
+    android:id="@+id/btn_login">
+
+</androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>
